@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+                html, body{
+                        width: 350px;
+                        text-align: center;
+                }
+                #frm1{
+                        text-align: start;
+                        
+                }
+        </style>
+        <title>Welcome Sqaunchers</title>
+</head>
+<body>
+        <!-- <h3>Time Zone Finder</h3>
+        <div id= "showTimezone"></div> -->
+        <h3>Manual Password Saver</h3>
+        <span><strong>"Manual"</strong> but <em>Most Secure</em></span>
+        <hr>
+        <form id="frm1" name="frm1">
+                Enter the Website Name:
+                <input type="text" name="yourname" placeholder="Enter Website Name"> <br> <br>
+
+                Enter your name:
+                <input type="text" name="yourname" placeholder="Enter email id"> <br> <br>
+
+                Enter Password: 
+                <input type="password" name="yourpassword" placeholder="Enter your password"> <br> <br>
+                <!-- <input type="submit" name="submit" value="submit"> -->
+                <input type="reset">
+        </form>
+        <!-- <input type="text" id="input" name="username" placeholder="Alice Smith"><br> -->
+        <br>
+        <input type="button" onclick="newfun()" value="click to reveal">
+        <!-- <input type="button" value="open these info in new tab" ondblclick="newTab()"> -->
+        <script>
+                function newfun(){
+                        //create a text box and display the input results
+                var x = document.getElementById("frm1");
+                var text = "";
+                var i;
+                for (i = 0; i < x.length ;i++) {
+                    text += x.elements[i].value + "<br>";
+                }
+                document.getElementById("demo").innerHTML = text;
+              };
+        //       function newTab(){
+        //               open url "chrome://newtab" and using inner html
+        //               i feed that data"
+        //       }
+
+
+
+        </script>
+        <p type="" id="demo"></p>
+       <a href='linkhref.html' id='mylink'><button>click for Date&time in new tab</button></a>
+       
+        
+</body>
+</html>
