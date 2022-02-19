@@ -1,0 +1,21 @@
+{
+        "manifest_version": 2,
+        "name": "password saver",
+        "version": "69.96",
+        "description": "simple extension that displays your current timezone",
+        "author": "ur dad",
+        "icons":{
+                "128": "electric_shock.png"
+        },
+        
+        "browser_action": {
+                "default_popup": "popup2.html" ,
+                "default_icon": "electric_shock.png",
+                "default_title": "timezone finnnderrr"
+        
+        },
+        "permissions": ["activeTab"],
+        "background": {
+                "scripts": ["content.js"]
+        }
+}
